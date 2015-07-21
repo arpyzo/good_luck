@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66E179A1B44BCFA008A78B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E17991B44BCFA008A78B4 /* QuartzCore.framework */; };
+		D66E179C1B44BD03008A78B4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E179B1B44BD03008A78B4 /* OpenGLES.framework */; };
+		D66E179E1B44BD0D008A78B4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E179D1B44BD0D008A78B4 /* GLKit.framework */; };
 		D67C68261B44BB4A000BDA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C68251B44BB4A000BDA5D /* AppDelegate.swift */; };
 		D67C68291B44BB4A000BDA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67C68271B44BB4A000BDA5D /* Main.storyboard */; };
 		D67C682B1B44BB4A000BDA5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67C682A1B44BB4A000BDA5D /* Images.xcassets */; };
 		D67C682E1B44BB4A000BDA5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67C682C1B44BB4A000BDA5D /* LaunchScreen.xib */; };
 		D67C683A1B44BB4A000BDA5D /* Good_LuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C68391B44BB4A000BDA5D /* Good_LuckTests.swift */; };
+		D67C68441B44BB6B000BDA5D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C68431B44BB6B000BDA5D /* GameViewController.swift */; };
+		D67C68461B44BB77000BDA5D /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C68451B44BB77000BDA5D /* Sprite.swift */; };
+		D67C68481B44BB8A000BDA5D /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = D67C68471B44BB8A000BDA5D /* Player.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D66E17991B44BCFA008A78B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D66E179B1B44BD03008A78B4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D66E179D1B44BD0D008A78B4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D67C68201B44BB4A000BDA5D /* Good Luck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Luck.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67C68241B44BB4A000BDA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67C68251B44BB4A000BDA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,9 @@
 		D67C68331B44BB4A000BDA5D /* Good LuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Good LuckTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67C68381B44BB4A000BDA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67C68391B44BB4A000BDA5D /* Good_LuckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good_LuckTests.swift; sourceTree = "<group>"; };
+		D67C68431B44BB6B000BDA5D /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D67C68451B44BB77000BDA5D /* Sprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		D67C68471B44BB8A000BDA5D /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66E179E1B44BD0D008A78B4 /* GLKit.framework in Frameworks */,
+				D66E179C1B44BD03008A78B4 /* OpenGLES.framework in Frameworks */,
+				D66E179A1B44BCFA008A78B4 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +72,9 @@
 		D67C68171B44BB4A000BDA5D = {
 			isa = PBXGroup;
 			children = (
+				D66E179D1B44BD0D008A78B4 /* GLKit.framework */,
+				D66E179B1B44BD03008A78B4 /* OpenGLES.framework */,
+				D66E17991B44BCFA008A78B4 /* QuartzCore.framework */,
 				D67C68221B44BB4A000BDA5D /* Good Luck */,
 				D67C68361B44BB4A000BDA5D /* Good LuckTests */,
 				D67C68211B44BB4A000BDA5D /* Products */,
@@ -76,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				D67C68251B44BB4A000BDA5D /* AppDelegate.swift */,
+				D67C68431B44BB6B000BDA5D /* GameViewController.swift */,
+				D67C68451B44BB77000BDA5D /* Sprite.swift */,
+				D67C68471B44BB8A000BDA5D /* Player.png */,
 				D67C68271B44BB4A000BDA5D /* Main.storyboard */,
 				D67C682A1B44BB4A000BDA5D /* Images.xcassets */,
 				D67C682C1B44BB4A000BDA5D /* LaunchScreen.xib */,
@@ -191,6 +212,7 @@
 			files = (
 				D67C68291B44BB4A000BDA5D /* Main.storyboard in Resources */,
 				D67C682E1B44BB4A000BDA5D /* LaunchScreen.xib in Resources */,
+				D67C68481B44BB8A000BDA5D /* Player.png in Resources */,
 				D67C682B1B44BB4A000BDA5D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67C68441B44BB6B000BDA5D /* GameViewController.swift in Sources */,
+				D67C68461B44BB77000BDA5D /* Sprite.swift in Sources */,
 				D67C68261B44BB4A000BDA5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +429,7 @@
 				D67C683F1B44BB4A000BDA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67C68401B44BB4A000BDA5D /* Build configuration list for PBXNativeTarget "Good LuckTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +438,7 @@
 				D67C68421B44BB4A000BDA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
