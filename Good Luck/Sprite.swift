@@ -16,6 +16,9 @@ import Foundation
 import GLKit
 
 class Sprite {
+    var position: GLKVector2?
+    var size: CGSize?
+    
     struct GLVertex {
         var x: GLfloat
         var y: GLfloat
@@ -43,6 +46,8 @@ class Sprite {
             NSLog("Error loading file in sprite: %@", error!);
         }
         
+        self.size = CGSizeMake(CGFloat(self.textureInfo!.width), CGFloat(self.textureInfo!.height))
+        
         geometryArray.append(GLVertex(0,                                0))                                    // Bottom left
         geometryArray.append(GLVertex(GLfloat(self.textureInfo!.width), 0))                                    // Bottom right
         geometryArray.append(GLVertex(0,                                GLfloat(self.textureInfo!.height)))    // Top left
@@ -57,6 +62,7 @@ class Sprite {
     func render() {
         self.effect.texture2d0.name = self.textureInfo!.name
         self.effect.texture2d0.enabled = GLboolean(GL_TRUE)
+        self.effect.transform.modelviewMatrix = GLKMatrix4Translate(GLKMatrix4Identity, self.position!.x, self.position!.y, 0)        
         self.effect.prepareToDraw()
         
         glEnableVertexAttribArray(GLuint(GLKVertexAttrib.Position.rawValue))

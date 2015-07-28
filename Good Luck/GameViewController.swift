@@ -36,6 +36,7 @@ class GameViewController: GLKViewController {
         self.effect!.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, 667, 0, 375, -1024, 1024)
         
         self.player = Sprite("Player.png", self.effect!)
+        self.player!.position = GLKVector2Make(0, 187 - (Float(self.player!.size!.height) / 2))
     }
     
     override func glkView(view: GLKView, drawInRect rect: CGRect) {
